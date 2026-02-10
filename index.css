@@ -1,27 +1,29 @@
-/* Reset some default browser nonsense */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Page styling */
-html, body {
-    height: 100%;
-}
-
 body {
-    background-color: #4CAF50;   /* Green background */
-    color: #000000;              /* Black text */
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2f;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
+    height: 100vh;
 }
 
-/* Make the text look intentional */
-body::selection {
-    background-color: black;
-    color: #4CAF50;
+.container {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
 }
