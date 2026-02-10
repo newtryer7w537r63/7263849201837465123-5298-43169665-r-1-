@@ -1,14 +1,27 @@
-html {
-    background-color: #111;
-    color: #f2f2f2;
-    font-family: Arial, sans-serif;
+/* Reset some default browser nonsense */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page styling */
+html, body {
+    height: 100%;
 }
 
 body {
+    background-color: #4CAF50;   /* Green background */
+    color: #000000;              /* Black text */
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-size: 2rem;
+    font-size: 3rem;
+}
+
+/* Make the text look intentional */
+body::selection {
+    background-color: black;
+    color: #4CAF50;
 }
